@@ -1,0 +1,28 @@
+:root {
+  --about-bg: #091b2a;
+  --main-blue: #0baaee;
+  --dark-gray: #081d22;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hover-zoom {
+  transition: all 0.4s;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.15);
+}
+
+a {
+  display: block;
+  color: inherit;
+}

@@ -7,6 +7,7 @@ export const ThemeContextProvider = ({ children }) => {
 
   useEffect(() => {
     const ls = localStorage.getItem('dark-theme')
+
     if (ls) {
       setDarkTheme(JSON.parse(ls))
     }
