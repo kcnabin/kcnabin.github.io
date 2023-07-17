@@ -2,6 +2,7 @@
   --about-bg: #091b2a;
   --main-blue: #0baaee;
   --dark-gray: #081d22;
+  --md-breakpoint: 768px;
 }
 
 .align-center {
@@ -25,4 +26,10 @@
 a {
   display: block;
   color: inherit;
+}
+
+@media (max-width: 520px) {
+  .about {
+    text-align: center;
+  }
 }
