@@ -1,8 +1,12 @@
 :root {
-  --about-bg: #091b2a;
-  --main-blue: #0baaee;
-  --dark-gray: #081d22;
-  --md-breakpoint: 768px;
+  --main-gray: #f4f2ed33;
+  --dark-gray: rgba(244, 242, 237, 0.158);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
 .align-center {
@@ -15,7 +19,8 @@
   justify-content: space-between;
 }
 
-.hover-zoom {
+.hover-zoom,
+.card-zoom {
   transition: all 0.4s;
 }
 
@@ -23,13 +28,30 @@
   transform: scale(1.15);
 }
 
+.card-zoom:hover {
+  transform: scale(1.05);
+}
+
 a {
   display: block;
   color: inherit;
+  text-decoration: none;
 }
 
 @media (max-width: 520px) {
   .about {
     text-align: center;
   }
+}
+
+.gray-bg {
+  background-color: lightgray;
+}
+
+.dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.font-12 {
+  font-size: 12px;
 }

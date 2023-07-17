@@ -6,7 +6,7 @@ const SkillCard = ({ skill }) => {
 
   return (
 
-    <div className="hover-zoom border rounded-3 overflow-hidden">
+    <div className="hover-zoom border rounded-3 overflow-hidden shadow">
       <div className={darkTheme ? '' : ''}>
         <div className="py-2 px-3 ">
           <div className="d-flex justify-content-center">

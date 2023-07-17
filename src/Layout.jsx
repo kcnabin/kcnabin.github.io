@@ -4,8 +4,10 @@ import Header from './components/header/Header'
 
 const Layout = () => {
   return (
-    <div>
-      <Header />
+    <div className=''>
+      <div className='position-sticky top-0 z-2'>
+        <Header />
+      </div>
       <Outlet />
 
     </div>

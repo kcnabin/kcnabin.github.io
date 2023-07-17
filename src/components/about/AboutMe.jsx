@@ -1,6 +1,7 @@
 import React from 'react'
 import Skills from '../skills/Skiils'
 import { useTheme } from '../../context/ThemeContext'
+import ProjectSection from '../../projects/ProjectSection'
 
 
 const AboutMe = () => {
@@ -102,6 +103,8 @@ const AboutMe = () => {
           <Skills skills={skills} title="Skills" />
 
           <Skills skills={techStack} title="Tech Stack" />
+
+          <ProjectSection />
         </div>
       </div>
     </>
