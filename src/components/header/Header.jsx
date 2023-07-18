@@ -24,10 +24,11 @@ const Header = () => {
   return (
     <div className={darkTheme ? 'bg-dark text-white' : 'bg-secondary text-white'}>
       <div className='container-md p-0'>
-        <div className={darkTheme ? 'border-start border-end border-bottom' : ''}>
+        <div className={darkTheme ? 'border-start border-end border-bottom' : 'border-secondary border-start border-end border-bottom'}>
           <div className='justify-between align-center px-3 py-3'>
-            <Link to='/' className='hover-zoom'>
+            <Link to='/' className='hover-zoom align-center'>
               <NLogo />
+              {/* <div className='ms-2 fw-bold'>Nabin's Profile</div> */}
             </Link >
 
             <div className='align-center gap-2'>

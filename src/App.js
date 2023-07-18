@@ -4,8 +4,8 @@ import "./App.css";
 
 import Layout from "./Layout";
 import AboutMe from "./components/about/AboutMe";
-import AllProjects from "./projects/AllProjects";
 import ProjectDetail from "./projects/ProjectDetail";
+import NotFound from "./components/notFound/NotFound";
 
 const App = () => {
   return (
@@ -16,9 +16,10 @@ const App = () => {
         </Route>
 
         <Route path="/projects" element={<Layout />}>
-          <Route path="" element={<AllProjects />} />
           <Route path=":projectId" element={<ProjectDetail />} />
         </Route>
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

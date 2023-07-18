@@ -101,7 +101,7 @@ const AboutMe = () => {
 
           </div>
 
-          <div className="my-3">
+          <div className="">
             <Skills skills={skills} title="Skills" />
             <Skills skills={techStack} title="Tech Stack" />
           </div>

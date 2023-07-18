@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTheme } from '../context/ThemeContext'
-import PillInfo from '../components/PillInfo'
-import { Link } from 'react-router-dom'
+import TitleAndStack from './components/TitleAndStack'
+import ExternalLinks from './components/ExternalLinks'
 
 const ProjectCard = ({ project }) => {
   const { darkTheme } = useTheme()
@@ -18,33 +18,9 @@ const ProjectCard = ({ project }) => {
 
       <div className={darkTheme ? 'gray-bg' : ''}>
         <div className="card-body py-2 px-3">
-          <h5 className="card-title m-0">
-            {project.title}
-          </h5>
+          <TitleAndStack project={project} />
 
-          <div className='align-center gap-2 my-2'>
-            <PillInfo text={project.stack} />
-            <PillInfo text={project.type} />
-          </div>
-
-          <div className="d-flex justify-content-end">
-            <div className='d-flex gap-2'>
-              <Link
-                to={`/projects/${project.id}`}
-                state={{ project }}
-                className='font-12 btn btn-outline-success py-1 px-2 rounded-pill'
-              >
-                View
-              </Link>
-
-              <Link
-                to={project.github}
-                className='font-12 btn btn-outline-success py-1 px-2 rounded-pill'
-              >
-                Github
-              </Link>
-            </div>
-          </div>
+          <ExternalLinks project={project} />
 
         </div>
       </div>
