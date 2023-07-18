@@ -2,6 +2,7 @@ import React from 'react'
 import Skills from '../skills/Skiils'
 import { useTheme } from '../../context/ThemeContext'
 import ProjectSection from '../../projects/ProjectSection'
+import ContactSection from '../contactMe/ContactSection'
 
 
 const AboutMe = () => {
@@ -90,21 +91,24 @@ const AboutMe = () => {
               </div>
             </div>
 
-            <div className='' style={{ width: "200px" }}>
+            <div className='overflow-hidden rounded-pill' style={{ width: "200px" }}>
               <img
                 src="/images/profile/nabin-profile.png "
                 alt="Nabin"
-                className='img-fluid w-100 rounded-pill'
+                className='img-fluid w-100 hover-zoom'
               />
             </div>
 
           </div>
 
-          <Skills skills={skills} title="Skills" />
-
-          <Skills skills={techStack} title="Tech Stack" />
+          <div className="my-3">
+            <Skills skills={skills} title="Skills" />
+            <Skills skills={techStack} title="Tech Stack" />
+          </div>
 
           <ProjectSection />
+
+          <ContactSection />
         </div>
       </div>
     </>

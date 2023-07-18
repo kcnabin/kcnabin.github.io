@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import LineHeader from '../components/LineHeader'
 
 const ProjectSection = () => {
   const highlightedProjects = [
@@ -8,7 +9,8 @@ const ProjectSection = () => {
       title: 'Camping Store',
       stack: 'MERN',
       type: 'E-Commerce',
-      photos: ['/images/projects/camping-store/0.png']
+      photos: ['/images/projects/camping-store/0.png'],
+      github: 'https://github.com/kcnabin/camping-store'
 
     },
     {
@@ -16,19 +18,21 @@ const ProjectSection = () => {
       title: 'Camping Nepal',
       stack: 'MERN',
       type: 'Booking System',
-      photos: ['/images/projects/camping-nepal/0.png']
+      photos: ['/images/projects/camping-nepal/0.png'],
+      github: 'https://github.com/kcnabin/camping-nepal'
 
     }, {
       id: 2,
       title: 'Portfolio',
       stack: 'Frontend',
       type: 'Portfolio',
-      photos: ['/images/projects/portfolio/0.png']
+      photos: ['/images/projects/portfolio/0.png'],
+      github: 'https://github.com/kcnabin/kcnabin.github.io'
     }
   ]
   return (
-    <div className='my-4'>
-      <h4 className='m-0 ms-2'>My Projects</h4>
+    <div className='mt-5'>
+      <LineHeader header="My Projects" />
 
       <div className='container-fluid my-1'>
         <div className="row">

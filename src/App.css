@@ -1,6 +1,7 @@
 :root {
   --main-gray: #f4f2ed33;
   --dark-gray: rgba(244, 242, 237, 0.158);
+  --pill-bg: #e0e2e2;
 }
 
 html,
@@ -52,6 +53,23 @@ a {
   background-color: var(--dark-gray);
 }
 
+.pill-bg {
+  background-color: var(--pill-bg);
+}
+
 .font-12 {
   font-size: 12px;
+}
+.contact-pill {
+  transition: all 0.3s;
+}
+.contact-pill:hover {
+  background-color: gray;
+  color: white;
+}
+
+.line-header h3 {
+  position: relative;
+  top: -20px;
+  display: inline-block;
 }

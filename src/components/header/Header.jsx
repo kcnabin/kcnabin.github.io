@@ -1,11 +1,12 @@
 import React from 'react'
+import { useTheme } from '../../context/ThemeContext'
+import NLogo from './NLogo'
 import { Link } from 'react-router-dom'
 import LinkedinIcon from '../../svgIcons/LinkedinIcon'
 import GithubIcon from '../../svgIcons/GithubIcon'
 import MoonFillIcon from '../../svgIcons/MoonFillIcon'
 import SunFillIcon from '../../svgIcons/SunFillIcon'
-import { useTheme } from '../../context/ThemeContext'
-import NLogo from './NLogo'
+
 
 const Header = () => {
   const { darkTheme, setDarkTheme } = useTheme()

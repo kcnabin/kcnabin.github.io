@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   const { darkTheme } = useTheme()
 
   return (
-    <Link to={`/projects/${project.id}`} className="card rounded-4 overflow-hidden shadow card-zoom">
+    <div className="card rounded-4 overflow-hidden shadow card-zoom">
       <div to={project.photos[0]} className='ratio ratio-4x3'>
         <img
           src={project.photos[0]}
@@ -27,9 +27,28 @@ const ProjectCard = ({ project }) => {
             <PillInfo text={project.type} />
           </div>
 
+          <div className="d-flex justify-content-end">
+            <div className='d-flex gap-2'>
+              <Link
+                to={`/projects/${project.id}`}
+                state={{ project }}
+                className='font-12 btn btn-outline-success py-1 px-2 rounded-pill'
+              >
+                View
+              </Link>
+
+              <Link
+                to={project.github}
+                className='font-12 btn btn-outline-success py-1 px-2 rounded-pill'
+              >
+                Github
+              </Link>
+            </div>
+          </div>
+
         </div>
       </div>
-    </Link>
+    </div>
   )
 }
 
