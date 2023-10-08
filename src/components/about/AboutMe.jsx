@@ -18,6 +18,10 @@ const AboutMe = () => {
       src: '/icons/react.svg'
     },
     {
+      name: 'React Native',
+      src: '/icons/react-native-icon.png'
+    },
+    {
       name: 'Bootstrap 5',
       src: '/icons/bootstrap.svg'
     },
@@ -34,13 +38,21 @@ const AboutMe = () => {
       src: '/icons/mongodb.svg'
     },
     {
-      name: 'HTML',
-      src: '/icons/html.svg'
+      name: 'MySQL',
+      src: '/icons/mysql-icon.svg'
     },
     {
-      name: 'CSS',
-      src: '/icons/css.svg'
+      name: 'SQLite',
+      src: '/icons/sqlite-icon.png'
     }
+    // {
+    //   name: 'HTML',
+    //   src: '/icons/html.svg'
+    // },
+    // {
+    //   name: 'CSS',
+    //   src: '/icons/css.svg'
+    // }
 
   ]
 
@@ -50,13 +62,18 @@ const AboutMe = () => {
       src: '/icons/redux-toolkit.svg'
     },
     {
+      name: 'Git',
+      src: '/icons/git.svg'
+    },
+    {
       name: 'React Router',
       src: '/icons/react-router.png'
     },
     {
-      name: 'Git',
-      src: '/icons/git.svg'
+      name: 'React Navigation',
+      src: '/icons/react-navigation-icon.svg'
     },
+
     {
       name: 'NPM',
       src: '/icons/npm.svg'
